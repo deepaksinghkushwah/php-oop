@@ -1,24 +1,9 @@
 <?php
-// define class
-class Student {
-    public $name = "Deepak";
-    public $age;
-    public $standard;
-
-    private function getGrade(){
-        return 100;
-    }
-
-    public function getRealGrade(){
-        return $this->getGrade();
-    }
-
-    public function getMyName(){
-        return $this->name;
-    }
-}
-
+include 'classes/Category.php';
+include 'classes/Product.php';
+$conn = mysqli_connect('localhost','root','','phpoop');
 // initlize class object
-$deepak = new Student;
-//$deepak->name = "fasf";
-echo $deepak->getMyName();
+$product = new Product;
+$product->createProduct();
+
+
