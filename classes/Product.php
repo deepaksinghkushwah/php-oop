@@ -12,4 +12,6 @@ class Product extends Category {
     public function deleteProduct(){
         echo 'Delete porduct fucntion called<br>';
     }
+
+    public function create(){}
 }
