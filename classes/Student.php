@@ -34,5 +34,17 @@ class Student {
         mysqli_query($conn, $sql);
         return mysqli_insert_id($conn);
     }
+
+    /**
+     * Undocumented function
+     *
+     * @param [type] $conn
+     * @return void
+     */
+    public function create($conn){
+        $sql = "INSERT INTO `students` SET `name` = '$this->name', `age` = '$this->age', `standard` = '$this->standard'";
+        mysqli_query($conn, $sql);
+        return mysqli_insert_id($conn);
+    }
     
 }

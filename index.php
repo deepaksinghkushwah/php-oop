@@ -4,7 +4,11 @@ spl_autoload_register(function($className){
 });
 $conn = mysqli_connect('localhost','root','','phpoop');
 // initlize class object
-$product = new Product;
+$obj = new Student;
+$obj->name = "Deeaak";
+$obj->age = 50;
+$obj->standard = 18;
+$obj->create($conn);
 
 
 
