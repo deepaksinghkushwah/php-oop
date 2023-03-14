@@ -2,7 +2,7 @@
 class Product extends Category {    
     public $category;
     public function getProduct(){
-        echo 'Get product fucntion called<br>';
+        echo 'Get product fucntion called<br>';        
     }
 
     public function createProduct(){
